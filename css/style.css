@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.category {
+    margin-left: 10px;
+    padding-bottom: 8px;
+    
+}
+.answernumb {
+    width: fit-content;
+    background-color: rgb(95, 158, 160,20%);
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.quiz-app{
+    border-top: 30px solid rgb(51, 137, 139);
+    padding: 25px;
+    margin: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -3px 3px 6px -5px black;
+}
+
+
+.answer-box{
+    direction: rtl;
+    padding: 10px;
+    
+}
+
+.answer-box .answer{
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-right: 3px solid cadetblue;
+    background-color: rgb(95, 158, 160,20%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.5s;
+    display: block;
+}
+.answer-box .answer:hover{
+    border-right: 10px solid cadetblue;
+}
+.answer-box .answer:not(:last-child){
+    border-bottom: 1px solid cadetblue;
+}
+
+.answer input[type="Radio"]:checked + label {
+    color: rgb(5, 86, 179);
+}
+
+.answer label{
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+h2{
+    margin-right: 10px;
+    direction: rtl;
+    padding-top: 15px;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+.submit-send{
+    padding-top: 5px;
+    outline: 0;
+    border: 0;
+    background-color: 0;
+    width: fit-content;
+    background-color: cadetblue;
+    padding: 10px 15px 10px 15px ; 
+    color: white;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+
+.submit-send:hover{
+    opacity: 0.9;
+    border-radius: 5px;
+    background-color: crimson;
+}
+.taimer{
+    font-weight: 600;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    background-color: 0;
+    color: cadetblue;
+ 
+}
+
+.number .spans{
+    flex: 1;
+    display: flex;
+ 
+}
+
+.number .spans span{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(231, 224, 224);
+    margin-left: 5px;
+    border-radius: 50%;
+
+}
+
+.number .spans span.active{
+    background-color: cadetblue;
+}
+
+.result{
+    display: flex;
+    padding-top: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: crimson;
+}
+.react{
+    
+    margin-left: 10px;
+    color: cadetblue;
+}
+
+
+ .result span.bad {
+    color: #dc0a0a;
+  }
+ .result span.good {
+    color: #009688;
+  }
+ .result span.perfect {
+    color: #0075ff;
+  }
+
+  footer{
+      text-align: center;
+  }
+
+
+
+
+/* 
+
+// <div class="question-box">
+                    
+// <h2> ما اللون الموجود في 75% من أعلام الدول؟  </h2>
+// <div class="react">
+//     <span class="bad"><i class="fa-solid fa-face-frown"></i></span>
+//     <span class="Good"><i class="fa-solid fa-face-smile"></i></span>
+//     <span class="perfect"><i class="fa-solid fa-face-laugh-beam"></i></span>
+// </div>
+// </div>
+// <div class="answer-box">
+// <div class="answer">
+//     <input type="radio" id="a_1" name="question" checked>
+//     <label for="a_1"> الاحمر </label>
+// </div>
+// <div class="answer">
+//     <input type="radio" id="a_2" name="question">
+//     <label for="a_2"> الأسود </label>
+// </div>
+// <div class="answer">
+//     <input type="radio" id="a_3" name="question">
+//     <label for="a_3"> الاخضر </label>
+// </div>
+// <div class="answer">
+//     <input type="radio" id="a_4" name="question">
+//     <label for="a_4"> الأبيض </label>
+// </div>
+// </div> */
